@@ -1,11 +1,12 @@
 from selenium.webdriver.common.by import By
+
 class loginPage:
     txt_useremail_id="email"
     txt_passwd_id="passwd"
     btn_signin_xpath="//*[@id='SubmitLogin']/span"
 
     #CONSTRUCTOR
-    def _init_(self,driver):
+    def __init__(self,driver):
         self.driver=driver
 
         #ACTIONS
